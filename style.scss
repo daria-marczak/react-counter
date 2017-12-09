@@ -1,0 +1,24 @@
+@import "https://fonts.googleapis.com/css?family=Merriweather:800";
+
+$merri: "Merriweather", serif;
+
+$grayish: #ecf0f1;
+$orange: #f39c12;
+$asphalt: #34495e;
+
+body {
+	background-color: $asphalt;
+	font-family: $merri;
+    color: $orange;
+    font-weight: 800;
+    font-size: 14rem;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+    padding: 2rem;
+}
