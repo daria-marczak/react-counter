@@ -13,10 +13,13 @@ var CounterDecrease = React.createClass({
 
     render: function() {
         var counter = setTimeout(function() {
-            this.setState({
-                counter: this.state.counter - 1
+            this.setState(function(prevState) {
+                return {
+                    counter: prevState.counter - 1
+                };
             });
         }.bind(this), 1000);
+
 
         return React.createElement("div", {},
             React.createElement("span", {}, "Countdown:  " + this.state.counter)
@@ -54,8 +57,10 @@ var CounterIncrease = React.createClass({
 
     render: function() {
         var counter = setTimeout(function() {
-            this.setState({
-                counter: this.state.counter + 1
+            this.setState(function(prevState) {
+                return {
+                    counter: prevState.counter + 1
+                };
             });
         }.bind(this), 500);
 
